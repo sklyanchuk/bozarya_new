@@ -2,9 +2,10 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/png">
   <title>База отдыха &#171Заря&#187</title>
 </head>
 <body>
@@ -12,9 +13,9 @@
   	<div class="row">
       <h1 class="col-sm-4">База отдыха &#171Заря&#187</h1>
       <nav class="col-sm-8 text-right">
-        <a href="#">услуги</a>
-				<a href="#">отзывы</a>
-        <a href="#">контакты</a>
+        <a href="#service">отдых</a>
+        <a href="#map" class="visible-desktop">как добраться</a>
+        <a href="#contacts">контакты</a>
     	</nav>
     </div>
   </header>
@@ -23,14 +24,14 @@
       <div class="row text-center">
         <h2>Отдых на природе</h2>
         <h3>Солнце. Воздух. Вода.</h3>
-        <a class="btn btn-primary" href="#" role="button">Хочу отдохнуть!</a>
+        <a class="btn btn-primary" href="#contacts" role="button">Хочу отдохнуть!</a>
       </div>
     </div>
   </section>
   <section class="container">
   	<div class="row">
       <figure class="col-sm-6">
-        <p>Уютные домики</p>
+        <p id="service">Уютные домики</p>
         <img src="images/houses.jpg" alt="Уютные домики"/>
       </figure>
       <figure class="col-sm-6">
@@ -49,10 +50,27 @@
       </figure>
     </div>
   </section>
+  <section class="container">
+    <div class="row text-center">
+      <div class="col-sm-6 col-sm-offset-3">
+        <h2>Арендуйте домик</h2>
+        <p>Звоните по номеру:</p>
+        <p id="contacts" class="phonenumber">8 916 888-79-76</p>
+      </div>
+    </div>
+  </section>
+  <section class="container">
+    <div class="row text-center">
+      <div class="col-sm-12">
+        <p id="map">Схема проезда</p>
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=ZN1DJ4v-jCc9gcuu4FYK_TSEvPTUFaj7&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+      </div>
+    </div>
+  </section>
   <footer class="container">
     <div class="row">
       <p class="col-sm-4">&copy; 2016 БО Заря</p>
     </div>
-   </footer>
+  </footer>
 </body>
 </html>
