@@ -107,7 +107,8 @@ section .row img {
   transition: 0.5s linear;
 }
 
-footer {
-  font-size: 12px;
+footer .row strong,
+footer .row address {
+  font-size: 16px;
   padding: 20px 0;
 }
